@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical">
+
+
+    <com.example.progressbar.FlikerProgressBar
+        android:id="@+id/flikerbar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        app:textSize="12sp"
+        app:loadingColor="#40c4ff"
+        app:stopColor="#40c4ff"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重新播放"
+        android:onClick="reLoad"
+        tools:ignore="MissingConstraints" />
+
+</LinearLayout>
